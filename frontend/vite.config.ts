@@ -9,14 +9,13 @@ export default defineConfig({
     alias: [{ find: "@", replacement: "/src" }],
   },
   build: {
+    outDir: '../fastadmin/static/',
     rollupOptions: {
-        output: {
-            dir: '../fastadmin/static/',
-            entryFileNames: 'index.min.js',
-            assetFileNames: 'index.min.css',
-            chunkFileNames: "chunk.min.js",
-            manualChunks: undefined,
-        }
+      output: {
+        entryFileNames: 'index.min.js',
+        assetFileNames: 'index.min.css',
+        chunkFileNames: "chunk.min.js",
+      }
     },
     target: "es2015",
   }
