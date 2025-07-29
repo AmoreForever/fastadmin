@@ -19,10 +19,5 @@ export default defineConfig({
         }
     },
     target: "es2015",
-    lib: {
-      entry: "src/main.tsx",
-      formats: ["umd"],
-      name: "App",
-    },
   }
 })
